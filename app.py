@@ -12,8 +12,9 @@ from langchain.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
+AWS_REGION = 'us-east-1'
 ## Initialize Bedrock Clients
-bedrock = boto3.client(service_name="bedrock-runtime")
+bedrock = boto3.client(service_name="bedrock-runtime",region_name = AWS_REGION)
 bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock)
 
 ## Data ingestion function
