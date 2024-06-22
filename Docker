@@ -1,5 +1,5 @@
 # Use the official Python base image
-FROM python:3.9-slim
+FROM python:3.12
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -23,4 +23,4 @@ COPY . /app/
 EXPOSE 8501
 
 # Run the Streamlit application
-CMD ["streamlit", "run", "your_script_name.py"]
+CMD ["streamlit", "run", "app.py"]
