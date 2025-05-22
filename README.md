@@ -2,6 +2,16 @@
 
 This project enables users to interact with PDF documents through a chatbot interface using AWS Bedrock. The application leverages natural language processing (NLP) and machine learning models to provide accurate and detailed answers to user queries based on the content of the PDFs.
 
+---
+
+## DEMO 
+
+<div align = 'center'>
+<img></img>
+</div>
+
+---
+
 ## Features
 
 - Load and process PDF documents.
@@ -10,11 +20,15 @@ This project enables users to interact with PDF documents through a chatbot inte
 - Generate responses using Llama3 LLM.
 - Streamlit interface for user interaction.
 
+---
+
 ## Prerequisites
 
 - Docker
 - AWS Account with appropriate permissions
 - AWS CLI configured with your credentials
+
+---
 
 ## Installation
 
@@ -40,8 +54,8 @@ This project enables users to interact with PDF documents through a chatbot inte
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/S1000-bit/PDFDocument_retriver.git
+    cd PDFDocument_retriver
     ```
 
 2. **Install dependencies**:
@@ -51,8 +65,10 @@ This project enables users to interact with PDF documents through a chatbot inte
 
 3. **Run the application**:
     ```bash
-    streamlit run your_script_name.py
+    streamlit run app.py
     ```
+
+---
 
 ## Usage
 
@@ -65,8 +81,7 @@ This project enables users to interact with PDF documents through a chatbot inte
 3. **Ask Questions**:
    Enter your question in the text input field and get responses based on the content of the uploaded PDFs.
 
-## Project Structure
-
+---
 
 ## Environment Variables
 
@@ -76,21 +91,19 @@ Ensure that the following environment variables are set in your environment:
 - `AWS_SECRET_ACCESS_KEY`: Your AWS secret access key.
 - `AWS_REGION`: The AWS region where your Bedrock resources are located.
 
+---
+
 ## Security
 
 Make sure to handle AWS credentials securely. Do not hardcode your credentials in the source code. Use environment variables or AWS IAM roles for better security practices.
 
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
+---
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
 
 ## Acknowledgements
 
