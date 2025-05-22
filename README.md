@@ -36,8 +36,8 @@ This project enables users to interact with PDF documents through a chatbot inte
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/S1000-bit/PDFDocument_retriver.git
+    cd PDFDocument_retriver.git
     ```
 
 2. **Build the Docker image**:
