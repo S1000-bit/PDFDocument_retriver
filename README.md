@@ -7,7 +7,7 @@ This project enables users to interact with PDF documents through a chatbot inte
 ## DEMO 
 
 <div align = 'center'>
-<img> src = https://github.com/user-attachments/assets/0396a594-3b82-421f-94f2-68401343d8fd </img>
+<img src = https://github.com/user-attachments/assets/0396a594-3b82-421f-94f2-68401343d8fd/>
 </div>
 
 ---
