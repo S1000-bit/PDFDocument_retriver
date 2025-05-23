@@ -29,7 +29,7 @@ def data_ingestion():
 def get_vector_store(docs):
     if not os.path.exists("faiss_index"):
         os.makedirs("faiss_index")
-    vectorstore_faiss = FAISS.from_documents(docs, bedrock_embeddings)
+    vectorstore_faiss = FAISS.from_documents(docs, embeddings)
     vectorstore_faiss.save_local("faiss_index")
 
 ## Function to get Llama3 LLM
