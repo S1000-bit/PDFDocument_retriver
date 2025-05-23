@@ -7,4 +7,3 @@ faiss-cpu
 numpy
 langchain-community
 pytest
-unittest.mock
