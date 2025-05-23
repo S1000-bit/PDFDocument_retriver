@@ -1,6 +1,6 @@
 import os
 from app import get_vector_store,data_ingestion
-from unittest import MagicMock,patch
+from unittest.mock import MagicMock,patch
 
 def test_faiss_vectorstore_created(tmp_path):
     docs = data_ingestion()
