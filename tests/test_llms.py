@@ -1,5 +1,6 @@
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock,patch
 from app import get_response_llm
+
 
 def test_llm_response_mocked():
     mock_llm = MagicMock()
