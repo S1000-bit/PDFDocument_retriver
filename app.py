@@ -26,7 +26,7 @@ def data_ingestion():
     return docs
 
 ## Vector Embedding and vector store creation
-def get_vector_store(docs):
+def get_vector_store(docs,embeddings):
     if not os.path.exists("faiss_index"):
         os.makedirs("faiss_index")
     vectorstore_faiss = FAISS.from_documents(docs, embeddings)
@@ -75,7 +75,7 @@ def main():
         if st.button("Vectors Update"):
             with st.spinner("Processing...."):
                 docs = data_ingestion()
-                get_vector_store(docs)
+                get_vector_store(docs,bedrock_embeddings)
                 st.success("Done")
 
     if st.button("Llama Output"):
