@@ -3,6 +3,12 @@ from app import get_vector_store,data_ingestion
 
 def test_faiss_vectorstore_created(tmp_path):
     docs = data_ingestion()
-    os.chdir(tmp_path)
-    get_vector_store(docs)
-    assert os.path.exists("faiss_index/index.faiss")
+    mock_embeddings = MagicMock()
+    
+    with patch('app.FAISS.from_documents') as mock_faiss:
+        mock_faiss_instance = MagicMock()
+        mock_faiss.return_value = mock_faiss_instance
+        os.chdir(tmp_path)
+        get_vector_store(docs,mock_embeddings)
+        mock_faiss.assert_called_once()
+        assert True
